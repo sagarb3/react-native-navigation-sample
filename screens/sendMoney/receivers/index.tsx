@@ -8,7 +8,7 @@ const ReceiversScreen = (props: any) => {
     return (
         <View style={styles.container}>
             <Text style={styles.textStyle}>
-                Payment Screen
+                Receiver Screen
             </Text>
             <Button title="Next" onPress={()=>{
                 props.navigation.navigate({

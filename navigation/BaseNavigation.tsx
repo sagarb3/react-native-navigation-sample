@@ -23,6 +23,7 @@ import ReviewScreen from "../screens/sendMoney/review";
 //     }
 // })
 const sendMoneyStackNavigation = createStackNavigator({
+    estimate:EstimateScreen,
     receivers:ReceiversScreen,
     review:ReviewScreen,
     payment:PaymentScreen,
