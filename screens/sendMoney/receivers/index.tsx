@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View } from 'react-native';
+import { Text, View,Button } from 'react-native';
 import { styles } from '../../../common/styles'
 
 
@@ -10,6 +10,11 @@ const ReceiversScreen = (props: any) => {
             <Text style={styles.textStyle}>
                 Payment Screen
             </Text>
+            <Button title="Next" onPress={()=>{
+                props.navigation.navigate({
+                    routeName:'payment'
+                })
+            }}/>
         </View>
     )
 }

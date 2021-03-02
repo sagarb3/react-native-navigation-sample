@@ -10,16 +10,23 @@ import PaymentScreen from '../screens/sendMoney/paymentOptions';
 import ReceiptScreen from '../screens/sendMoney/receipt';
 import ReceiversScreen from '../screens/sendMoney/receivers';
 import { create } from "react-test-renderer";
+import ReviewScreen from "../screens/sendMoney/review";
 
-const sendMoneyNavigation = createBottomTabNavigator({
-    Estimate: EstimateScreen,
-    Payment: PaymentScreen,
-    Receipt: ReceiptScreen,
-    Receiver: ReceiversScreen
-}, {
-    tabBarOptions: {
-        activeTintColor: 'orange'
-    }
+// const sendMoneyNavigation = createBottomTabNavigator({
+//     Estimate: EstimateScreen,
+//     Payment: PaymentScreen,
+//     Receipt: ReceiptScreen,
+//     Receiver: ReceiversScreen
+// }, {
+//     tabBarOptions: {
+//         activeTintColor: 'orange'
+//     }
+// })
+const sendMoneyStackNavigation = createStackNavigator({
+    receivers:ReceiversScreen,
+    review:ReviewScreen,
+    payment:PaymentScreen,
+    receipt:ReceiptScreen
 })
 
 // const BaseNavigation = createStackNavigator({
@@ -31,7 +38,7 @@ const sendMoneyNavigation = createBottomTabNavigator({
 const BaseDrawerNavigator = createBottomTabNavigator({
     Home:HomeScreen,
     About:AboutScreen,
-    SendMoney: sendMoneyNavigation
+    SendMoney: sendMoneyStackNavigation
 })
 
 export default createAppContainer(BaseDrawerNavigator);

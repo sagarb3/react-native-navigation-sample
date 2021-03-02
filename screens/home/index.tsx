@@ -11,6 +11,16 @@ const HomeScreen = (props: any) => {
             <Text style={styles.textStyle}>
                 Home Screen
             </Text>
+            {/* <Button title="About" onPress={()=>{
+                props.navigation.navigate({
+                    routeName:'About'
+                })
+            }}/>
+            <Button title="Send Money" onPress={()=>{
+                props.navigation.navigate({
+                    routeName:'SendMoney'
+                })
+            }}/> */}
         </View>
     )
 }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View } from 'react-native';
+import { Text, View,Button } from 'react-native';
 import { styles } from '../../../common/styles'
 
 
@@ -10,6 +10,14 @@ const ReceiptScreen = (props: any) => {
             <Text style={styles.textStyle}>
                 Receipt Screen
             </Text>
+            <Button title="Home" onPress={()=>{
+                // props.navigation.navigate('Root',{
+                //     screen:'Home'
+                // })
+                console.log(props.navigation)
+                props.navigation.popToTop();
+                props.navigation.goBack(null);
+            }}/>
         </View>
     )
 }
