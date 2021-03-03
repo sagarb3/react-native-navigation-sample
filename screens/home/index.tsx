@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Text, View,Button } from 'react-native';
 import { styles } from '../../common/styles'
 import {HeaderButtons,Item} from "react-navigation-header-buttons"
-import HeaderButton from '../../components/HeaderButton'
+import HeaderButton from '../../components/HeaderButton';
+import CameraApp from '../../components/CameraComponent'
 
 
 const HomeScreen = (props: any) => {
@@ -11,6 +12,7 @@ const HomeScreen = (props: any) => {
             <Text style={styles.textStyle}>
                 Home Screen
             </Text>
+            <CameraApp/>
             {/* <Button title="About" onPress={()=>{
                 props.navigation.navigate({
                     routeName:'About'
