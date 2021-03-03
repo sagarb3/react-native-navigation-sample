@@ -15,10 +15,10 @@
 ### Task Progress 
  - [x] RN Camera Implemented
  - [x] Permission Issue Fixed for android
- - [ ] Expo-camera implemented in seperate project 
--  [x] react-native-unimodule integration: failed multiple times searching for workaround
--  [ ] expo-camera intergration
--  [ ] react-native-unimodule
+ - [x] Expo-camera implemented in seperate project 
+-  [x] ~~react-native-unimodule integration: failed multiple times searching for workaround~~
+-  [x] expo-camera intergration
+-  [x] react-native-unimodule
 
 ## UI Task
 - [x] Screens Added
@@ -27,7 +27,7 @@
 - [ ] Adding proper drawer menu
 - [ ] Theming the tsx codebase
 - [ ] Reducer implementation
-- [ ] Improving the camera capture ui
+- [x] Improving the camera capture ui
 
 ## Challenges
 - [ ] RNCamera soon to be deprecated as per the authors note 
