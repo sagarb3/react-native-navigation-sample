@@ -81,6 +81,7 @@ project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
 ]
 
+apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 apply from: "../../node_modules/react-native/react.gradle"
 
 /**
@@ -196,6 +197,7 @@ dependencies {
         exclude group:'com.facebook.flipper'
         exclude group:'com.squareup.okhttp3', module:'okhttp'
     }
+    addUnimodulesDependencies()
 
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'

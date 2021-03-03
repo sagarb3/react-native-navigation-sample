@@ -3,27 +3,12 @@ import { Text, View,Button } from 'react-native';
 import { styles } from '../../common/styles'
 import {HeaderButtons,Item} from "react-navigation-header-buttons"
 import HeaderButton from '../../components/HeaderButton';
-import CameraApp from '../../components/CameraComponent'
+import CameraApp from '../../components/TestComponent'
 
 
 const HomeScreen = (props: any) => {
     return (
-        <View style={styles.container}>
-            <Text style={styles.textStyle}>
-                Home Screen
-            </Text>
-            <CameraApp/>
-            {/* <Button title="About" onPress={()=>{
-                props.navigation.navigate({
-                    routeName:'About'
-                })
-            }}/>
-            <Button title="Send Money" onPress={()=>{
-                props.navigation.navigate({
-                    routeName:'SendMoney'
-                })
-            }}/> */}
-        </View>
+        <CameraApp/>
     )
 }
 
